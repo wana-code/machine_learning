@@ -1,0 +1,22 @@
+DIRECTORY:
+  data: ./data/01_split
+
+SEED:
+  random_seed: 42
+
+MODEL: xgb
+PARAMETER:
+  n_estimators: 500
+  learning_rate: 0.1
+  random_state: 42
+  
+LABEL_ENCODING:
+  other: 0
+  noise: 1
+  normal: 2
+  in: 3
+  out: 4
+
+TRAIN:
+  early_stopping_round: 15
+  

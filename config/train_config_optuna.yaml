@@ -1,0 +1,27 @@
+DIRECTORY:
+  data: ./data/01_split
+
+SEED:
+  random_seed: 42
+
+MODEL: xgb
+PARAMETER:
+  n_estimators : 3895
+  max_depth : 15
+  min_child_weight : 64
+  gamma: 1
+  colsample_bytree : 0.6
+  lambda : 0.016480446427978974
+  alpha : 0.12561043700013558
+  subsample: 0.8
+    
+LABEL_ENCODING:
+  other: 0
+  noise: 1
+  normal: 2
+  in: 3
+  out: 4
+
+TRAIN:
+  early_stopping_round: 15
+  
